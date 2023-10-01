@@ -1,3 +1,4 @@
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -36,3 +37,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Some Screenshots
+
+
+<img width="906" alt="02" src="https://github.com/xAn-x/Movie-Flix/assets/115899138/42c915a3-8ee3-4329-a35d-36e1d07b335d">
+
+<img width="911" alt="01" src="https://github.com/xAn-x/Movie-Flix/assets/115899138/73fd5ce1-4e36-4434-b3c8-6cb41ea45f59">
+
+<img width="918" alt="03" src="https://github.com/xAn-x/Movie-Flix/assets/115899138/93154801-6a72-44d1-80ed-0c4d1488c48e">
+
+<img width="897" alt="04" src="https://github.com/xAn-x/Movie-Flix/assets/115899138/36e056cd-fc03-4ddd-ada0-7930d54c9c97">
+
+
+
+
