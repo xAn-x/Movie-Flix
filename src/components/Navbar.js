@@ -5,9 +5,10 @@ import Image from "next/image";
 
 import { BiSearch } from "react-icons/bi";
 import { BsBellFill } from "react-icons/bs";
-import {FaUserCircle} from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
 
-import { signOut } from "next-auth/react";
+// import { signOut } from "next-auth/react";
+
 
 const Navbar = () => {
   return (
@@ -32,13 +33,13 @@ const Navbar = () => {
 
         <div className="flex items-center space-x-4 text-sm font-light">
           <BiSearch className="sm hidden h-6 w-6 sm:inline text-grey-400" />
-          <p className="hidden lg:inline text-grey-400">Legends</p>
+          <Image src="/penguin.png" alt="penguin" height="50" width="50" />
           <BsBellFill className="h-6 w-6 text-grey-400" />
 
-          
-          <button onClick={()=>signOut()}>
+
+          {/* <button onClick={()=>signOut()}>
             <FaUserCircle className="text-grey-400 text-xl"/>  
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

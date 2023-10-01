@@ -1,13 +1,13 @@
 import Login from "@/components/Login";
 import MovieDetails from "@/components/MovieDetails";
-import { getSession, useSession } from "next-auth/react";
+// import { getSession, useSession } from "next-auth/react";
 import { useState } from "react";
 
 const MovieDetailPage = ({ movie }) => {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   const [showPlayer, setShowPlayer] = useState(false);
 
-  if (!session) return <Login />;
+  // if (!session) return <Login />;
 
   const trailerIndex = movie.videos.results.findIndex(
     (element) => element.type === "Trailer"
@@ -28,7 +28,7 @@ const MovieDetailPage = ({ movie }) => {
 };
 
 export async function getServerSideProps(context) {
-  const session = await getSession(context);
+  // const session = await getSession(context);
   const { id } = context.query;
 
   const request = await fetch(
@@ -37,7 +37,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      session,
+      // session,
       movie: request,
     },
   };

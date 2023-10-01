@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { getSession, useSession } from "next-auth/react";
-import Login from "@/components/Login";
+// import { getSession, useSession } from "next-auth/react";
+// import Login from "@/components/Login";
 import Navbar from "@/components/Navbar";
 import requests from "@/utils/requests";
 import Hero from "@/components/Hero";
@@ -24,9 +24,9 @@ export default function Home({
   romanceMovies,
   documentaries,
 }) {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
 
-  if (!session) return <Login />;
+  // if (!session) return <Login />;
 
   return (
     <>
@@ -55,7 +55,7 @@ export default function Home({
 }
 
 export async function getServerSideProps(context) {
-  const session = await getSession(context);
+  // const session = await getSession(context);
 
   const [
     moviePosters,
@@ -81,7 +81,7 @@ export async function getServerSideProps(context) {
 
   return prepareForSerializatoin({
     props: {
-      session,
+      // session,
       moviePosters: moviePosters.results,
       trendingNow: trendingNow.results,
       topRated: topRated.results,
@@ -93,3 +93,5 @@ export async function getServerSideProps(context) {
     },
   });
 }
+
+
